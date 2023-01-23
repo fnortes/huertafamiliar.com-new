@@ -7,6 +7,7 @@ import {
   Divider,
   Heading,
   Image,
+  Link,
   Text,
   VStack,
 } from '@chakra-ui/react'
@@ -36,6 +37,12 @@ export default function App({ Component, pageProps }: AppProps) {
           <Divider my={6} />
           <Component {...pageProps} />
         </Container>
+        <Text as="footer" color="gray.400" fontSize="sm" mt={6} textAlign="center">
+          © Copyright {new Date().getFullYear()} App de código abierto, desarrollada por{' '}
+          <Link isExternal color="secondary.400" fontWeight={600} href="https://github.com/fnortes">
+            fnortes
+          </Link>
+        </Text>
       </Box>
     </ChakraProvider>
   )

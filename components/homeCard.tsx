@@ -7,11 +7,14 @@ import {
   CardFooter,
   Button,
   Text,
+  Image,
+  Box,
 } from '@chakra-ui/react'
 
 import { Vegetable } from '@/vegetable/types'
 import { STATUS_COLORS } from '@/constants'
 import VEGETABLES_STATUS_TEXTS from '@/data/vegetableStatusTexts'
+import GENERAL_CROPS_CONFIG from '@/data/generalCropsTexts'
 
 import HarvestCard from './harvestCard'
 
@@ -22,6 +25,7 @@ interface Props {
 export default function HomeCard({ vegetable }: Props) {
   console.log(vegetable)
   const backgroundColor = STATUS_COLORS[vegetable.status]
+  const cropConfig = GENERAL_CROPS_CONFIG[vegetable.crop.generalName]
 
   return (
     <Card backgroundColor={backgroundColor}>
@@ -52,20 +56,25 @@ export default function HomeCard({ vegetable }: Props) {
         </Stack>
       </CardHeader>
       <CardBody paddingX={3} paddingY={0}>
-        {vegetable.daysToHarvest !== null && vegetable.dateToHarvest !== null && (
-          <HarvestCard
-            dateToHarvest={vegetable.dateToHarvest}
-            daysToHarvest={vegetable.daysToHarvest}
-          />
-        )}
-        {vegetable.nextAction.date !== null && (
-          <Text fontSize="small">
-            <Text as="span" fontWeight="bold">
-              Próxima acción:{' '}
-            </Text>
-            <Text as="span">{vegetable.nextAction.date}</Text>
-          </Text>
-        )}
+        <Stack direction="row" justifyContent="space-between">
+          <Image alt={`Imagen del cultivo de ${cropConfig.name}`} src={cropConfig.img} width="24" />
+          <Box>
+            {vegetable.daysToHarvest !== null && vegetable.dateToHarvest !== null && (
+              <HarvestCard
+                dateToHarvest={vegetable.dateToHarvest}
+                daysToHarvest={vegetable.daysToHarvest}
+              />
+            )}
+            {vegetable.nextAction.date !== null && (
+              <Text fontSize="small">
+                <Text as="span" fontWeight="bold">
+                  Próxima acción:{' '}
+                </Text>
+                <Text as="span">{vegetable.nextAction.date}</Text>
+              </Text>
+            )}
+          </Box>
+        </Stack>
       </CardBody>
       <CardFooter padding={3}>
         <Button colorScheme="primary" variant="outline">
