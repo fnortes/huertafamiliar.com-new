@@ -15,8 +15,8 @@ import { Vegetable } from '@/vegetable/types'
 import { STATUS_COLORS } from '@/app/constants'
 import VEGETABLES_STATUS_TEXTS from '@/data/vegetableStatusTexts'
 import GENERAL_CROPS_CONFIG from '@/data/generalCropsTexts'
-
-import HarvestCard from './harvestCard'
+import { getTitle } from '@/utils/vegetable'
+import HarvestCard from '@/components/harvestCard'
 
 interface Props {
   vegetable: Vegetable
@@ -31,9 +31,7 @@ export default function HomeCard({ vegetable }: Props) {
       <CardHeader padding={3}>
         <Stack spacing={2}>
           <Stack direction="row" justifyContent="space-between">
-            <Heading size="sm">
-              {`${vegetable.amount} - ${vegetable.crop.cod} - ${vegetable.crop.name}`}
-            </Heading>
+            <Heading size="sm">{getTitle(vegetable)}</Heading>
             <Heading
               alignItems="center"
               color="secondary.500"

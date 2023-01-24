@@ -1,6 +1,6 @@
 import { SimpleGrid, Text } from '@chakra-ui/react'
 
-import HomeCard from '@/components/homeCard'
+import HomeCard from '@/vegetable/components/homeCard'
 import { INFO } from '@/app/constants'
 
 import { Vegetable } from '../types'
