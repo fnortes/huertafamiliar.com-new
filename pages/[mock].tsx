@@ -1,4 +1,6 @@
-import { GetStaticProps } from 'next'
+import { ParsedUrlQuery } from 'querystring'
+
+import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 
 import { Vegetable } from '@/vegetable/types'
@@ -6,14 +8,29 @@ import api from '@/vegetable/api'
 import { INFO } from '@/app/constants'
 import Vegetables from '@/vegetable/screens/vegetables'
 
-export const getStaticProps: GetStaticProps = async () => {
-  const vegetables = await api.list()
+interface Params extends ParsedUrlQuery {
+  mock: string
+}
+
+interface OutputProps {
+  vegetables: Vegetable[]
+}
+
+export const getStaticProps: GetStaticProps<OutputProps, Params> = async ({ params }) => {
+  const vegetables = await api.mock.list(params?.mock)
 
   return {
     props: {
       vegetables,
     },
     revalidate: 60,
+  }
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: [],
+    fallback: process.env.NODE_ENV === 'production' ? false : 'blocking',
   }
 }
 

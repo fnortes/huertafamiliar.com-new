@@ -1,0 +1,432 @@
+[
+  {
+      "key": "ADE-9-27/4/22-B. Huerta 3",
+      "crop": {
+          "cod": "ADE",
+          "name": "Apio de Elne",
+          "daysToHarvest": 120,
+          "generalName": "APIO"
+      },
+      "status": "D",
+      "amount": 9,
+      "startedType": "SCG",
+      "start": "27/4/22",
+      "toHotbed": null,
+      "toM2L": "27/6/22",
+      "toDefinitive": "29/8/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 272,
+      "daysToHarvest": -152,
+      "dateToHarvest": "25/8/2022",
+      "nextAction": {
+          "date": "10/12/22",
+          "description": "* MANTENIMIENTO:\n  * Para blanquear los tallos, cuando la planta alcanza los 40-50 cm., poner alrededor un saco de papel o un plástico negro, atado.\n  * Después esperar 20 días o más para cosechar, y darle tiempo a que se blanquee.\n * COSECHA:\n  * Cuando la planta tenga de 40 a 60 cm., cortando la planta entera, y desechando las hojas más feas exteriores.\n  * Otra opción es ir cogiendo hojas conforme tengan un buen tamaño varias veces hasta que saque flor.\n * Si hace mucho calor, mantener a la sombra.\n * Tampoco soporta bien el frío, por debajo de los 7-8 grados no va bien."
+      },
+      "binnacle": "* Por ahora, parece que van bien.\n * Transplantadas a M2L.\n * Se pasan las 9 plantas, bien crecidas a definitivo, a 30 cm. de distancia, a tresbolillo.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 3",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 800
+              },
+              "outside": {
+                  "width": 80,
+                  "length": 800
+              }
+          }
+      }
+  },
+  {
+      "key": "LR-12-27/9/22-B. Huerta 7",
+      "crop": {
+          "cod": "LR",
+          "name": "Lechuga Romana",
+          "daysToHarvest": 75,
+          "generalName": "LECHUGA"
+      },
+      "status": "D",
+      "amount": 12,
+      "startedType": "SCP",
+      "start": "27/9/22",
+      "toHotbed": "27/9/22",
+      "toM2L": null,
+      "toDefinitive": "31/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 119,
+      "daysToHarvest": -44,
+      "dateToHarvest": "11/12/2022",
+      "nextAction": {
+          "date": "11/12/22",
+          "description": "* Cosechar."
+      },
+      "binnacle": "* Se hace nueva siembra de 12 celdas en invernadero.\n * 19/10/2022: Han germinado pefectamente, muchas en todas las celdas. Además han crecido exagerado de bien, hasta el punto de que ya están para transplantar a definitivo.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 7",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 1220
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 1260
+              }
+          }
+      }
+  },
+  {
+      "key": "EB-12-27/9/22-B. Huerta 6",
+      "crop": {
+          "cod": "EB",
+          "name": "Espinaca Butterflay",
+          "daysToHarvest": 90,
+          "generalName": "ESPINACA"
+      },
+      "status": "D",
+      "amount": 12,
+      "startedType": "SCP",
+      "start": "27/9/22",
+      "toHotbed": "27/9/22",
+      "toM2L": null,
+      "toDefinitive": "22/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 119,
+      "daysToHarvest": -29,
+      "dateToHarvest": "26/12/2022",
+      "nextAction": {
+          "date": "26/12/2022",
+          "description": "* Cosechar."
+      },
+      "binnacle": "* Se hace nueva siembra de 12 celdas en invernadero.\n * Se pasan a la huerta y están super bien, muy grandes y seguimos con las 12 celdas, de entre 3 y 4 plantas por celda.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 6",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 660
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 700
+              }
+          }
+      }
+  },
+  {
+      "key": "E-12-27/9/22-B. Huerta 6",
+      "crop": {
+          "cod": "E",
+          "name": "Espinaca Viroflay",
+          "daysToHarvest": 90,
+          "generalName": "ESPINACA"
+      },
+      "status": "D",
+      "amount": 12,
+      "startedType": "SCP",
+      "start": "27/9/22",
+      "toHotbed": "27/9/22",
+      "toM2L": null,
+      "toDefinitive": "22/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 119,
+      "daysToHarvest": -29,
+      "dateToHarvest": "26/12/2022",
+      "nextAction": {
+          "date": "26/12/22",
+          "description": "* Cosechar."
+      },
+      "binnacle": "* Se hace nueva siembra de 12 celdas en invernadero.\n * Se pasan a la huerta y están super bien, muy grandes y seguimos con las 12 celdas, de entre 3 y 4 plantas por celda.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 6",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 660
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 700
+              }
+          }
+      }
+  },
+  {
+      "key": "AC-11-29/9/22-B. Huerta 7",
+      "crop": {
+          "cod": "AC",
+          "name": "Acelga Verde de Penca Blanca Ancha",
+          "daysToHarvest": 90,
+          "generalName": "ACELGA"
+      },
+      "status": "D",
+      "amount": 11,
+      "startedType": "SCP",
+      "start": "29/9/22",
+      "toHotbed": "29/9/22",
+      "toM2L": null,
+      "toDefinitive": "31/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 117,
+      "daysToHarvest": -27,
+      "dateToHarvest": "28/12/2022",
+      "nextAction": {
+          "date": "28/12/22",
+          "description": "* COSECHA:\n * A los 50 días de transplantar ya se pueden consumir. \n * Empezar a recolectar cuando las hojas alcanzan los 35-40 cm., retirando las hojas manualmente, cortandolas con un cuchillo desde la base, por fuera, y dejando las hojas centrales más pequeñas.\n * Si la plantación de mediados de verano - otoño la cubrimos con manta térmica, tendremos acelgas durante la mayor parte del invierno."
+      },
+      "binnacle": "* Se hace una nueva siembra en SCP de 12 celdas, poniendo unas 5 semillas por celda.\n * 20/10/2022: Las aclaro para dejar 1 por celda. Han germinado muy bien, de 4 a 5 por celda, aunque en una celda no ha salido nada (quizás en la siembra se me pasó poner semillas en esa celda, porque es muy raro que en todas germine muy bien y en esa nada). Así que pasamos de 12 a 11 plantas. Están para pasar a la huerta ya.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 7",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 1220
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 1260
+              }
+          }
+      }
+  },
+  {
+      "key": "AH-10-30/8/22-B. Huerta 3",
+      "crop": {
+          "cod": "AH",
+          "name": "Apio Hortinatura.com",
+          "daysToHarvest": 120,
+          "generalName": "APIO"
+      },
+      "status": "D",
+      "amount": 10,
+      "startedType": "P",
+      "start": "30/8/22",
+      "toHotbed": null,
+      "toM2L": null,
+      "toDefinitive": "30/8/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 147,
+      "daysToHarvest": -27,
+      "dateToHarvest": "28/12/2022",
+      "nextAction": {
+          "date": "28/12/22",
+          "description": "* Cosechar."
+      },
+      "binnacle": "* 27/08/2022: Se compran los plantones en hortinatura.com.\n * 30/08/2022: Llegan los plantones y se plantan en la huerta, en el bancal 3, a continuación de los apios sembrados por mi.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 3",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 800
+              },
+              "outside": {
+                  "width": 80,
+                  "length": 800
+              }
+          }
+      }
+  },
+  {
+      "key": "O-4-11/10/22-B. Huerta 5",
+      "crop": {
+          "cod": "O",
+          "name": "Orégano Raal-Cox",
+          "daysToHarvest": 90,
+          "generalName": "OREGANO"
+      },
+      "status": "D",
+      "amount": 4,
+      "startedType": "P",
+      "start": "11/10/22",
+      "toHotbed": null,
+      "toM2L": "11/10/22",
+      "toDefinitive": "12/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 105,
+      "daysToHarvest": -15,
+      "dateToHarvest": "9/1/2023",
+      "nextAction": {
+          "date": "9/1/23",
+          "description": "* Cosechar."
+      },
+      "binnacle": "* 11/10/2022: Se compra en la Aparecida 4 plantas de orégano para poner en la huerta.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 5",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 660
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 700
+              }
+          }
+      }
+  },
+  {
+      "key": "BO-13-13/9/22-B. Huerta 6",
+      "crop": {
+          "cod": "BO",
+          "name": "Borraja Movera",
+          "daysToHarvest": 120,
+          "generalName": "BORRAJA"
+      },
+      "status": "D",
+      "amount": 13,
+      "startedType": "SCP",
+      "start": "13/9/22",
+      "toHotbed": "13/9/22",
+      "toM2L": null,
+      "toDefinitive": "18/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 133,
+      "daysToHarvest": -13,
+      "dateToHarvest": "11/1/2023",
+      "nextAction": {
+          "date": "11/1/23",
+          "description": "* Cosechar cuando alcance una altura de unos 30 o 35 cm.\n * Ir cogiendo hojas conforme tengan un buen tamaño varias veces hasta que saque flor.\n * O cortar con un cuchillo y arrancar toda la planta entera, como la lechuga.\n * Buscar recetas cuando llegue el momento, pero parece que sobre todo se consumen los tallos y muy poco de la hoja."
+      },
+      "binnacle": "* Se hace nueva siembra de 18 celdas en SCP, poniendo 2 semillas por celda para aclarar y luego llevar a la huerta.\n * 19/10/2022: Se hace transplante a la huerta, poniendolas a unos 20 cm. De distancia cada celda (algunas celdas llevan 2 plantas). Tener en cuenta esto, porque no tengo info sobre distancia de plantación de este cultivo. Nos quedamos con 13 plantadas en este bancal.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 6",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 660
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 700
+              }
+          }
+      }
+  },
+  {
+      "key": "BO-4-13/9/22-B. Huerta 7",
+      "crop": {
+          "cod": "BO",
+          "name": "Borraja Movera",
+          "daysToHarvest": 120,
+          "generalName": "BORRAJA"
+      },
+      "status": "D",
+      "amount": 4,
+      "startedType": "SCP",
+      "start": "13/9/22",
+      "toHotbed": "13/9/22",
+      "toM2L": null,
+      "toDefinitive": "18/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 133,
+      "daysToHarvest": -13,
+      "dateToHarvest": "11/1/2023",
+      "nextAction": {
+          "date": "11/1/23",
+          "description": "* Cosechar cuando alcance una altura de unos 30 o 35 cm.\n * Ir cogiendo hojas conforme tengan un buen tamaño varias veces hasta que saque flor.\n * O cortar con un cuchillo y arrancar toda la planta entera, como la lechuga.\n * Buscar recetas cuando llegue el momento, pero parece que sobre todo se consumen los tallos y muy poco de la hoja."
+      },
+      "binnacle": "* Se hace nueva siembra de 18 celdas en SCP, poniendo 2 semillas por celda para aclarar y luego llevar a la huerta.\n * 19/10/2022: Se hace transplante a la huerta, poniendolas a unos 20 cm. De distancia cada celda (algunas celdas llevan 2 plantas). Tener en cuenta esto, porque no tengo info sobre distancia de plantación de este cultivo. Nos quedamos con 4 plantadas en este bancal.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 7",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 1220
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 1260
+              }
+          }
+      }
+  },
+  {
+      "key": "GS-14-21/9/22-B. Huerta 7",
+      "crop": {
+          "cod": "GS",
+          "name": "Guisante Senador de Enrame",
+          "daysToHarvest": 120,
+          "generalName": "GUISANTE"
+      },
+      "status": "D",
+      "amount": 14,
+      "startedType": "SCG",
+      "start": "21/9/22",
+      "toHotbed": "21/9/22",
+      "toM2L": null,
+      "toDefinitive": "4/10/22",
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 125,
+      "daysToHarvest": -5,
+      "dateToHarvest": "19/1/2023",
+      "nextAction": {
+          "date": "19/1/23",
+          "description": "* COSECHA:\n * A los 5 o 6 meses.\n * Cuando la vaina ya tiene un tacto más rugoso y un grosor importante, que se nota que tiene los granos dentro.\n * La vaina debe estar de un color empezando a amarillear, como si empezasen a secarse.\n * Si no se van a consumir en el momento, mejor dejar los guisantes dentro de la vaina, aunque la vaina sí se coseche."
+      },
+      "binnacle": "* Se hace una siembra de 48 celdas (golpes), poniendo 3 semillas por celda, para después pasarlos a definitivo a la huerta.\n * Se pasan a definitivo, en el bancal 7 de la huerta, poniendolos a 30 cm. Aunque la germinación ha sido muy buena, habían celdas que solo tenían 1 o 2 germinadas, así que he optado por solapar algunos golpes. En resumen, de 48 celdas he transplantando 32 golpes.\n *08/12/2022: Han sufrido mucho con los caracoles, babosas y los conejos. De los 32 golpes transplantados, sólo quedan 14, pero muy pequeños. Como algunos parece que están volviendo a desarrollar y floreciendo y todo, les doy otra oportunidad. Los he limpiado de malas hierbas y los he aporcado un poco. Me falta entutorarlos y ver si consiguen crecer bien.\n * 10/12/2022: ya están entutoradas con la malla verde.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "B. Huerta 7",
+          "measurements": {
+              "inside": {
+                  "width": 80,
+                  "length": 1220
+              },
+              "outside": {
+                  "width": 120,
+                  "length": 1260
+              }
+          }
+      }
+  },
+  {
+      "key": "ECA-6-23/11/22-G. Semilleros 2L",
+      "crop": {
+          "cod": "ECA",
+          "name": "Escarola Cabello de Ángel",
+          "daysToHarvest": 150,
+          "generalName": "ESCAROLA"
+      },
+      "status": "T2L",
+      "amount": 6,
+      "startedType": "SCP",
+      "start": "23/11/22",
+      "toHotbed": "23/11/22",
+      "toM2L": "26/12/22",
+      "toDefinitive": null,
+      "harvestStart": null,
+      "toDelete": null,
+      "days": 62,
+      "daysToHarvest": 88,
+      "dateToHarvest": "22/4/2023",
+      "nextAction": {
+          "date": "22/1/23",
+          "description": "* Transplantar cuando tengan 8-10 cm, más o menos a los 30 días de la siembra, en un marco de 30x30.\n * COSECHA:\n  * Blanquear, con una especia de campana y 2 varillas (o si no se quiere comprar, con una goma o cuerda también vale), para tapar la escarola. Se hace durante 10-15 días antes de cosecharla.\n  * Cosechar después de 2-3 meses desde la plantación."
+      },
+      "binnacle": "* Se siembran 6 en semillero tipo invernadero y se deja en la galería a ver si desarrollan ahí con el frío.\n * 26/12/2022: Las paso a M2L, para aprovechar y enderezarlas, ya que el tiempo que estuvieron en la galería se ahilaron y no fueron muy bien. Aun así, sigo manteniendo las 6 que sembré.",
+      "ratings": "* MUY BIEN.",
+      "inventory": {
+          "name": "G. Semilleros 2L"
+      }
+  }
+]

@@ -12,7 +12,8 @@ import {
   VStack,
 } from '@chakra-ui/react'
 
-import theme from '@/theme'
+import theme from '@/app/theme'
+import { INFO } from '@/app/constants'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,13 +27,9 @@ export default function App({ Component, pageProps }: AppProps) {
           py={4}
         >
           <VStack as="header" mb={6}>
-            <Image
-              alt="Logo de mi huerta familiar"
-              borderRadius={9999}
-              src="https://via.placeholder.com/128"
-            />
-            <Heading>Tu Huerta Familiar</Heading>
-            <Text>Gestiona tu huerta familiar</Text>
+            <Image alt="Logo de mi huerta familiar" borderRadius={9999} src={INFO.avatar} />
+            <Heading>{INFO.title}</Heading>
+            <Text>{INFO.description}</Text>
           </VStack>
           <Divider my={6} />
           <Component {...pageProps} />

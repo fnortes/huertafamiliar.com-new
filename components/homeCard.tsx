@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react'
 
 import { Vegetable } from '@/vegetable/types'
-import { STATUS_COLORS } from '@/constants'
+import { STATUS_COLORS } from '@/app/constants'
 import VEGETABLES_STATUS_TEXTS from '@/data/vegetableStatusTexts'
 import GENERAL_CROPS_CONFIG from '@/data/generalCropsTexts'
 
@@ -23,12 +23,11 @@ interface Props {
 }
 
 export default function HomeCard({ vegetable }: Props) {
-  console.log(vegetable)
   const backgroundColor = STATUS_COLORS[vegetable.status]
   const cropConfig = GENERAL_CROPS_CONFIG[vegetable.crop.generalName]
 
   return (
-    <Card backgroundColor={backgroundColor}>
+    <Card backgroundColor={backgroundColor} data-test-id="vegetable">
       <CardHeader padding={3}>
         <Stack spacing={2}>
           <Stack direction="row" justifyContent="space-between">
