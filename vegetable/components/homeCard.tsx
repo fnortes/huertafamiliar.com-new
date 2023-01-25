@@ -20,9 +20,10 @@ import HarvestCard from '@/components/harvestCard'
 
 interface Props {
   vegetable: Vegetable
+  onViewDetail: (vegetable: Vegetable) => void
 }
 
-export default function HomeCard({ vegetable }: Props) {
+export default function HomeCard({ vegetable, onViewDetail }: Props) {
   const backgroundColor = STATUS_COLORS[vegetable.status]
   const cropConfig = GENERAL_CROPS_CONFIG[vegetable.crop.generalName]
 
@@ -74,7 +75,7 @@ export default function HomeCard({ vegetable }: Props) {
         </Stack>
       </CardBody>
       <CardFooter padding={3}>
-        <Button colorScheme="primary" variant="outline">
+        <Button colorScheme="primary" variant="outline" onClick={() => onViewDetail(vegetable)}>
           Ver detalle
         </Button>
       </CardFooter>

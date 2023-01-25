@@ -1,7 +1,18 @@
 export const stringToDate = (stringDate: string): Date => {
   const [day, month, year] = stringDate.split('/')
 
-  return new Date(Number('20'.concat(year)), Number(month) - 1, Number(day))
+  if (
+    day !== undefined &&
+    day !== '' &&
+    month !== undefined &&
+    month !== '' &&
+    year !== undefined &&
+    year !== ''
+  ) {
+    return new Date(Number('20'.concat(year)), Number(month) - 1, Number(day))
+  }
+
+  return new Date()
 }
 
 interface CalculateDaysProps {
@@ -13,9 +24,8 @@ interface CalculateDaysProps {
 export const calculateDaysBetween = ({
   startDateString,
   endDate = new Date(),
-  daysToAdd = 0
-}: CalculateDaysProps
-): number => {
+  daysToAdd = 0,
+}: CalculateDaysProps): number => {
   if (startDateString === null) {
     return 0
   }

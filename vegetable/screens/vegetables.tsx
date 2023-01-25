@@ -18,10 +18,14 @@ export default function Vegetables({ vegetables }: Props) {
     )
   }
 
+  const handleViewDetail = (vegetable: Vegetable) => {
+    console.log(vegetable)
+  }
+
   return (
     <SimpleGrid spacing={4} templateColumns="repeat(auto-fill, minmax(240px, 1fr))">
       {vegetables.map(item => (
-        <HomeCard key={item.key} vegetable={item} />
+        <HomeCard key={item.key} vegetable={item} onViewDetail={handleViewDetail} />
       ))}
     </SimpleGrid>
   )
