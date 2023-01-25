@@ -9,9 +9,17 @@
     "plugin:prettier/recommended",
     "next",
     "next/core-web-vitals",
-    "plugin:cypress/recommended"
+    "plugin:cypress/recommended",
+    "plugin:jest-dom/recommended"
   ],
-  "plugins": ["react", "prettier", "import", "@typescript-eslint", "cypress"],
+  "plugins": [
+    "react",
+    "prettier",
+    "import",
+    "@typescript-eslint",
+    "cypress",
+    "jest-dom"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -40,7 +48,7 @@
         "singleQuote": true,
         "bracketSpacing": true,
         "arrowParens": "avoid",
-        "endOfLine":"auto"
+        "endOfLine": "auto"
       }
     ],
     "@typescript-eslint/no-unused-vars": [
@@ -51,15 +59,29 @@
         "argsIgnorePattern": "^_.*?$"
       }
     ],
-    "import/order": ["warn", {
-      "groups": ["type", "builtin", "object", "external", "internal", "parent", "sibling", "index"],
-      "pathGroups": [{
-        "pattern": "~/**",
-        "group": "external",
-        "position": "after"
-      }],
-      "newlines-between": "always"
-    }],
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "type",
+          "builtin",
+          "object",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "~/**",
+            "group": "external",
+            "position": "after"
+          }
+        ],
+        "newlines-between": "always"
+      }
+    ],
     "react/self-closing-comp": "warn",
     "react/jsx-sort-props": [
       "warn",
@@ -72,12 +94,16 @@
     ],
     "padding-line-between-statements": [
       "warn",
-      {"blankLine": "always", "prev": "*", "next": ["return", "export"]},
-      {"blankLine": "always", "prev": ["const", "let", "var"], "next": "*"},
-      {"blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"]}
+      { "blankLine": "always", "prev": "*", "next": ["return", "export"] },
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      {
+        "blankLine": "any",
+        "prev": ["const", "let", "var"],
+        "next": ["const", "let", "var"]
+      }
     ],
     "no-duplicate-imports": "error",
-    "import/no-anonymous-default-export": [2, {"allowObject": true}],
+    "import/no-anonymous-default-export": [2, { "allowObject": true }],
     "@typescript-eslint/no-floating-promises": "off"
   }
 }

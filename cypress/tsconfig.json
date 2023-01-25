@@ -14,11 +14,11 @@
     "isolatedModules": false,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": ".",
+    "baseUrl": "../",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["../*"]
     },
     "types": ["cypress"]
   },
-  "include": ["./"],
+  "include": ["./"]
 }

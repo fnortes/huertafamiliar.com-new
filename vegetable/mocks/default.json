@@ -65,19 +65,7 @@
       },
       "binnacle": "* Se hace nueva siembra de 12 celdas en invernadero.\n * 19/10/2022: Han germinado pefectamente, muchas en todas las celdas. Además han crecido exagerado de bien, hasta el punto de que ya están para transplantar a definitivo.",
       "ratings": "* MUY BIEN.",
-      "inventory": {
-          "name": "B. Huerta 7",
-          "measurements": {
-              "inside": {
-                  "width": 80,
-                  "length": 1220
-              },
-              "outside": {
-                  "width": 120,
-                  "length": 1260
-              }
-          }
-      }
+      "inventory": null
   },
   {
       "key": "EB-12-27/9/22-B. Huerta 6",
