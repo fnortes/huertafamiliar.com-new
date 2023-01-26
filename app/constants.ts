@@ -21,7 +21,7 @@ export const INFO: {
   avatar: 'https://via.placeholder.com/128',
   banner: 'https://via.placeholder.com/128',
   title: 'Tu Huerta Familiar',
-  description: 'App para la gestión de tu huerta familiar',
+  description: 'Web App para la gestión de tu huerta familiar',
   noVegetables: 'No hay cultivos',
   sheet:
     'https://docs.google.com/spreadsheets/d/e/2PACX-1vSzICPeec3HXcox4UF7G7P1u8FI8Kgohh_yDM_WbjL38s4WnW93VbxrgcZlCUzLQA/pub?output=csv',
