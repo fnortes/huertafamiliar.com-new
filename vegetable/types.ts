@@ -96,19 +96,19 @@ export interface VegetableCSV {
   'A definitivo': string
   'A M2L': string
   'A semillero': string
-  'Arranque': VegetableStartTypes
-  'Cantidad': string
-  'Clave': string
+  Arranque: VegetableStartTypes
+  Cantidad: string
+  Clave: string
   'Cod.': string
-  'Cosecha': string
-  'Cultivo': string
+  Cosecha: string
+  Cultivo: string
   'Descripción próxima acción': string
-  'Días': string
-  'Estado': VegetableStatus
+  Días: string
+  Estado: VegetableStatus
   'Fin Cultivo': string
   'Inicio COS': string
-  'Inicio': string
-  'Inventario': string
+  Inicio: string
+  Inventario: string
   'Observaciones e historial de como va la siembra actual': string
   'Proxima acción': string
   'Valoración para futuras siembras': string

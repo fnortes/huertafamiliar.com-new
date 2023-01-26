@@ -57,12 +57,10 @@ export default function HomeCard({ vegetable, onViewDetail }: Props) {
         <Stack direction="row" justifyContent="space-between">
           <Image alt={`Imagen del cultivo de ${cropConfig.name}`} src={cropConfig.img} width="24" />
           <Box>
-            {vegetable.daysToHarvest !== null && vegetable.dateToHarvest !== null && (
-              <HarvestCard
-                dateToHarvest={vegetable.dateToHarvest}
-                daysToHarvest={vegetable.daysToHarvest}
-              />
-            )}
+            <HarvestCard
+              dateToHarvest={vegetable.dateToHarvest}
+              daysToHarvest={vegetable.daysToHarvest}
+            />
             {vegetable.nextAction.date !== null && (
               <Text fontSize="small">
                 <Text as="span" fontWeight="bold">
