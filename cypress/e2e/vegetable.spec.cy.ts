@@ -15,4 +15,15 @@ describe('Cultivos', () => {
     cy.get('[data-test-id="vegetable"]').should('have.length', mockEmpty.length)
     cy.contains(INFO.noVegetables)
   })
+
+  it('Muestra el drawer con el detalle del cultivo y lo oculta', () => {
+    cy.visit('/default')
+
+    cy.get('[role="dialog"]').should('not.exist')
+    cy.get('[data-test-id="vegetable"] button').first().click()
+    cy.get('[role="dialog"]').should('be.visible')
+
+    cy.get('[aria-label="Close"]').click()
+    cy.get('[role="dialog"]').should('not.exist')
+  })
 })
