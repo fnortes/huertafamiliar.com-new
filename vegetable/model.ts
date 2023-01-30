@@ -1,8 +1,8 @@
-import { Vegetable, VegetableCSV } from './types'
-
 import cropVarieties from '@/data/cropVarieties'
 import { calculateDateFromNow, calculateDaysBetween } from '@/utils/date'
 import inventories from '@/data/inventories'
+
+import { Vegetable, VegetableCSV } from './types'
 
 export const mapCVSVegetables = (result: VegetableCSV): Vegetable => {
   const crop = cropVarieties.find(item => item.cod === result['Cod.']) ?? cropVarieties[0]
@@ -11,7 +11,7 @@ export const mapCVSVegetables = (result: VegetableCSV): Vegetable => {
   const start = result.Inicio !== '' ? result.Inicio : null
   const days = calculateDaysBetween({ startDateString: start })
   const tempDaysToHarvest = crop.daysToHarvest ?? 0
-  const daysToHarvest = (tempDaysToHarvest > 0) ? tempDaysToHarvest - days : null
+  const daysToHarvest = tempDaysToHarvest > 0 ? tempDaysToHarvest - days : null
   const inventory = inventories.find(item => item.name === result.Inventario) ?? null
 
   const dateToHarvest = daysToHarvest !== null ? calculateDateFromNow(daysToHarvest) : null
@@ -33,10 +33,10 @@ export const mapCVSVegetables = (result: VegetableCSV): Vegetable => {
     dateToHarvest,
     nextAction: {
       date: result['Proxima acción'] !== '' ? result['Proxima acción'] : null,
-      description: result['Descripción próxima acción']
+      description: result['Descripción próxima acción'],
     },
     binnacle: result['Observaciones e historial de como va la siembra actual'],
     ratings: result['Valoración para futuras siembras'],
-    inventory
+    inventory,
   }
 }

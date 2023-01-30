@@ -9,7 +9,7 @@ const VEGETABLES_START_TYPES_TEXTS: Record<VegetableStartTypes, string> = {
   [VegetableStartTypes.SD]: 'Siembra directa',
   [VegetableStartTypes.SDB]: 'Siembra directa bote',
   [VegetableStartTypes.SIG]: 'Semillero individual grande',
-  [VegetableStartTypes.SIP]: 'Semillero individual pequeño'
+  [VegetableStartTypes.SIP]: 'Semillero individual pequeño',
 }
 
 export default VEGETABLES_START_TYPES_TEXTS

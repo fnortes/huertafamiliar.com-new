@@ -3,7 +3,14 @@ module.exports = {
   collectCoverage: true,
   // The directory where Jest should output its coverage files
   coverageDirectory: 'coverage',
-
+  collectCoverageFrom: [
+    '<rootDir>/**/*.{ts,tsx}',
+    // '<rootDir>/vegetable/components/*.{ts, tsx}',
+    '!<rootDir>/app/theme.ts',
+    '!<rootDir>/pages/{_app,_document,[mock]}.tsx',
+    '!<rootDir>/*.ts',
+    '!<rootDir>/cypress/**/*.ts',
+  ],
   // Indicates which provider should be used to instrument code for coverage
   coverageProvider: 'v8',
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module

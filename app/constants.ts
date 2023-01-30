@@ -10,14 +10,7 @@ export const STATUS_COLORS: Record<VegetableStatus, string> = {
   [VegetableStatus.T2L]: 'warning.100',
 }
 
-export const INFO: {
-  avatar: string
-  banner: string
-  title: string
-  description: string
-  noVegetables: string
-  sheet: string
-} = {
+export const INFO = {
   avatar: 'https://via.placeholder.com/128',
   banner: 'https://via.placeholder.com/128',
   title: 'Tu Huerta Familiar',
@@ -25,4 +18,5 @@ export const INFO: {
   noVegetables: 'No hay cultivos',
   sheet:
     'https://docs.google.com/spreadsheets/d/e/2PACX-1vSzICPeec3HXcox4UF7G7P1u8FI8Kgohh_yDM_WbjL38s4WnW93VbxrgcZlCUzLQA/pub?output=csv',
+  maxVegetablesByPage: 20,
 }

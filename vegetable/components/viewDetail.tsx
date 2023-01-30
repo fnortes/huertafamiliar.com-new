@@ -5,6 +5,7 @@ import {
   DrawerContent,
   DrawerHeader,
   DrawerOverlay,
+  DrawerProps,
   HStack,
   Image,
   List,
@@ -20,12 +21,11 @@ import HarvestCard from '@/components/harvestCard'
 
 import { Vegetable } from '../types'
 
-interface Props {
+interface Props extends Omit<DrawerProps, 'children'> {
   vegetable: Vegetable
-  onClose: () => void
 }
 
-export default function ViewDetail({ vegetable, onClose }: Props) {
+export default function ViewDetail({ vegetable, ...props }: Props) {
   const {
     key,
     crop,
@@ -54,7 +54,7 @@ export default function ViewDetail({ vegetable, onClose }: Props) {
   }
 
   return (
-    <Drawer isOpen={true} placement="right" size="lg" onClose={onClose}>
+    <Drawer placement="right" size="lg" {...props}>
       <DrawerOverlay />
       <DrawerContent>
         <DrawerCloseButton />

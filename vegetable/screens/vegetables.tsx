@@ -29,12 +29,12 @@ export default function Vegetables({ vegetables }: Props) {
   return (
     <>
       <SimpleGrid spacing={4} templateColumns="repeat(auto-fill, minmax(240px, 1fr))">
-        {vegetables.slice(0, 20).map(item => (
+        {vegetables.slice(0, INFO.maxVegetablesByPage).map(item => (
           <HomeCard key={item.key} vegetable={item} onViewDetail={handleViewDetail} />
         ))}
       </SimpleGrid>
       {vegetableSelected !== null && (
-        <ViewDetail vegetable={vegetableSelected} onClose={() => handleViewDetail(null)} />
+        <ViewDetail isOpen vegetable={vegetableSelected} onClose={() => handleViewDetail(null)} />
       )}
     </>
   )

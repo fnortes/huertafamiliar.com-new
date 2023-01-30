@@ -14,7 +14,7 @@ export default function HarvestCard({ daysToHarvest, dateToHarvest }: Props) {
         ? ['error.500', `(Pasado ${daysToHarvest} días)`]
         : daysToHarvest > 10
         ? ['success.600', `(Faltan ${daysToHarvest} días)`]
-        : ['warning.600', `(Faltan ${daysToHarvest} días)`]
+        : ['warning.600', daysToHarvest > 0 ? `(Faltan ${daysToHarvest} días)` : `(Es hoy!!!)`]
 
     return (
       <Text fontSize="small">
