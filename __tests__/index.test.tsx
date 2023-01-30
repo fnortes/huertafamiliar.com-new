@@ -4,7 +4,7 @@ import axios from 'axios'
 import { render } from '@testing-library/react'
 import { GetStaticPropsContext, PreviewData } from 'next'
 
-import Home, { getStaticProps } from '..'
+import Home, { getStaticProps } from '@/pages'
 
 jest.mock('axios')
 
