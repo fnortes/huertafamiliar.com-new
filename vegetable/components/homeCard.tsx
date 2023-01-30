@@ -55,7 +55,12 @@ export default function HomeCard({ vegetable, onViewDetail }: Props) {
       </CardHeader>
       <CardBody paddingX={3} paddingY={0}>
         <Stack direction="row" justifyContent="space-between">
-          <Image alt={`Imagen del cultivo de ${cropConfig.name}`} src={cropConfig.img} width="24" />
+          <Image
+            alt={`Imagen del cultivo de ${cropConfig.name}`}
+            objectFit="contain"
+            src={cropConfig.img}
+            width="24"
+          />
           <Box>
             <HarvestCard
               dateToHarvest={vegetable.dateToHarvest}
