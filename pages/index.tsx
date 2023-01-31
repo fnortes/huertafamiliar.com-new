@@ -13,7 +13,6 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       vegetables,
     },
-    revalidate: 60,
   }
 }
 
