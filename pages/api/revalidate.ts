@@ -1,7 +1,7 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-type Data = {
+export type Data = {
   revalidate: boolean
 }
 
@@ -10,7 +10,10 @@ type Data = {
 // Para pruebas, correr la build y luego ejecutar el "yarn start" para arrancar en modo build y después llamar
 // a este servicio a mano desde el Postman o similar.
 export default async function handler(req: NextApiRequest, res: NextApiResponse<Data>) {
-  if (req.headers['x-secret'] === process.env.REVALIDATE_SECRET) {
+  if (
+    req.headers['x-secret'] === process.env.REVALIDATE_SECRET &&
+    process.env.REVALIDATE_SECRET !== undefined
+  ) {
     await res.revalidate('/')
     res.status(200).json({ revalidate: true })
   } else {

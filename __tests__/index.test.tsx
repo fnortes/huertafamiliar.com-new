@@ -27,7 +27,6 @@ describe('Home Page', () => {
       props: {
         vegetables: [],
       },
-      revalidate: 60,
     })
   })
 })

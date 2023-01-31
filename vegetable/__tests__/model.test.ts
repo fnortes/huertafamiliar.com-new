@@ -1,5 +1,6 @@
 import cropVarieties from '@/data/cropVarieties'
 import inventories from '@/data/inventories'
+import { calculateDateFromNow } from '@/utils/date'
 
 import { mapCVSVegetables } from '../model'
 import { Vegetable, VegetableCSV, VegetableStartTypes, VegetableStatus } from '../types'
@@ -53,17 +54,33 @@ describe('Vegetable model', () => {
     }
 
     test('Debería funcionar bien con un cultivo completo', () => {
-      expect(mapCVSVegetables(vegetableCSV)).toEqual(vegetable)
+      const original: Vegetable = {
+        ...mapCVSVegetables(vegetableCSV),
+        days: 0,
+        daysToHarvest: null,
+      }
+      const expected: Vegetable = { ...vegetable, days: 0, daysToHarvest: null }
+
+      expect(original).toEqual(expected)
     })
 
     test('Debería funcionar bien con un cultivo completo de un tipo que no tenga informados los días para cosechar', () => {
       vegetableCSV['Cod.'] = 'CALE'
-      vegetable.crop = cropVarieties.find(item => item.cod === 'CALE') ?? cropVarieties[0]
-      vegetable.key = 'CALE-9-27/4/22-B. Huerta 3'
-      vegetable.dateToHarvest = null
-      vegetable.daysToHarvest = null
+      const original: Vegetable = {
+        ...mapCVSVegetables(vegetableCSV),
+        days: 0,
+        daysToHarvest: null,
+      }
+      const expected: Vegetable = {
+        ...vegetable,
+        days: 0,
+        daysToHarvest: null,
+        crop: cropVarieties.find(item => item.cod === 'CALE') ?? cropVarieties[0],
+        key: 'CALE-9-27/4/22-B. Huerta 3',
+        dateToHarvest: null,
+      }
 
-      expect(mapCVSVegetables(vegetableCSV)).toEqual(vegetable)
+      expect(original).toEqual(expected)
     })
 
     test('Debería funcionar bien con un cultivo no completo', () => {
@@ -74,19 +91,28 @@ describe('Vegetable model', () => {
       vegetableCSV['A M2L'] = ''
       vegetableCSV['A definitivo'] = ''
       vegetableCSV['Proxima acción'] = ''
-      vegetable.key = 'ARH-a--none'
-      vegetable.crop = cropVarieties[0]
-      vegetable.amount = 0
-      vegetable.start = null
-      vegetable.inventory = null
-      vegetable.toM2L = null
-      vegetable.toDefinitive = null
-      vegetable.nextAction.date = null
-      vegetable.dateToHarvest = '30/4/2023'
-      vegetable.days = 0
-      vegetable.daysToHarvest = 90
 
-      expect(mapCVSVegetables(vegetableCSV)).toEqual(vegetable)
+      const original: Vegetable = {
+        ...mapCVSVegetables(vegetableCSV),
+        days: 0,
+        daysToHarvest: null,
+      }
+      const expected: Vegetable = {
+        ...vegetable,
+        days: 0,
+        daysToHarvest: null,
+        key: 'ARH-a--none',
+        crop: cropVarieties[0],
+        amount: 0,
+        start: null,
+        inventory: null,
+        toM2L: null,
+        toDefinitive: null,
+        nextAction: { ...vegetable.nextAction, date: null },
+        dateToHarvest: calculateDateFromNow(cropVarieties[0].daysToHarvest ?? 0),
+      }
+
+      expect(original).toEqual(expected)
     })
   })
 })

@@ -21,6 +21,7 @@ module.exports = {
   preset: 'ts-jest',
   // A list of paths to directories that Jest should use to search for files in
   roots: ['<rootDir>'],
+  globalSetup: '<rootDir>/jest/setup-env.ts',
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: ['<rootDir>/jest/jest-setup.ts'],
   // The test environment that will be used for testing
