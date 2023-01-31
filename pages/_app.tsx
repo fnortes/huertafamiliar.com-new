@@ -18,7 +18,7 @@ import { INFO } from '@/app/constants'
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider theme={theme}>
-      <Box p={4}>
+      <Box p={{ base: 0, sm: 4 }}>
         <Container
           backgroundColor="white"
           borderRadius="sm"
@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }: AppProps) {
           py={4}
         >
           <VStack as="header" mb={6}>
-            <Image alt="Logo de mi huerta familiar" borderRadius={9999} src={INFO.avatar} />
+            <Image alt={`Logo de ${INFO.title}`} borderRadius={9999} src={INFO.avatar} />
             <Heading>{INFO.title}</Heading>
             <Text>{INFO.description}</Text>
           </VStack>

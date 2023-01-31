@@ -12,7 +12,6 @@ export const STATUS_COLORS: Record<VegetableStatus, string> = {
 
 export const INFO = {
   avatar: 'https://via.placeholder.com/128',
-  banner: 'https://via.placeholder.com/128',
   title: 'Tu Huerta Familiar',
   description: 'Web App para la gestión de tu huerta familiar',
   noVegetables: 'No hay cultivos',

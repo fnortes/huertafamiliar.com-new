@@ -78,7 +78,17 @@ export default function HomeCard({ vegetable, onViewDetail }: Props) {
         </Stack>
       </CardBody>
       <CardFooter padding={3}>
-        <Button colorScheme="primary" variant="outline" onClick={() => onViewDetail(vegetable)}>
+        <Button
+          colorScheme="primary"
+          leftIcon={
+            <Image
+              alt="Ver detalle"
+              src="https://icongr.am/fontawesome/eye.svg?size=24&color=2f855a"
+            />
+          }
+          variant="outline"
+          onClick={() => onViewDetail(vegetable)}
+        >
           Ver detalle
         </Button>
       </CardFooter>

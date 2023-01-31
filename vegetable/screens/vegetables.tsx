@@ -28,7 +28,7 @@ export default function Vegetables({ vegetables }: Props) {
 
   return (
     <>
-      <SimpleGrid spacing={4} templateColumns="repeat(auto-fill, minmax(240px, 1fr))">
+      <SimpleGrid spacing={4} templateColumns="repeat(auto-fill, minmax(320px, 1fr))">
         {vegetables.slice(0, INFO.maxVegetablesByPage).map(item => (
           <HomeCard key={item.key} vegetable={item} onViewDetail={handleViewDetail} />
         ))}
